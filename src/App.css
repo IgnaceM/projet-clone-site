@@ -1,0 +1,104 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  }
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+ 
+#image {
+  animation: scale 5s infinite;
+}
+
+@keyframes scale {
+  0% {scale: 1}
+  50% {scale: 1.2}
+  100% {scale: 1}
+}
+
+
+#spn {
+  animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+#spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+      transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+#mouv {
+  animation: mouv 10s linear infinite;
+}
+@keyframes mouv {
+  0% {transform: translateX(50px)}
+  50% {transform: translateX(-50px)}
+  100% {transform: translateX(50px)}
+}
+
+#scale {
+  animation: scale 3s linear infinite;
+}
+@keyframes scale {
+  0% {scale: 1}
+  50% {scale: 1.7}
+  100% {scale: 1}
+}
+
+#scale2 {
+  animation: scale2 5s linear infinite;
+}
+@keyframes scale2 {
+  0% {scale: 1}
+  50% {scale: 1.1}
+  70% {scale: 1.4}
+  85% {scale: 1.1}
+  100% {scale: 1}
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin {
+  animation: spin 3s linear infinite;
+}
