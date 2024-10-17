@@ -4,8 +4,11 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden;
   }
-
+body {
+  overflow-x: hidden;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

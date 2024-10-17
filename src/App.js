@@ -278,14 +278,14 @@ function App() {
 						className="opacity-10 dark:opacity-[100%] dark:max-md:opacity-50 absolute left-0 top-0 h-full w-full -z-10"
 					/>
 
-					<div className="absolute left-1/2 h-full w-1 ml-5  bg-[#ff772e] opacity-40 z-10"></div>
+					<div className="absolute left-1/2 h-full w-1 ml-5 max-md:ml-2  bg-[#ff772e] opacity-40 z-10"></div>
 
-					<div className="absolute left-1/2 ml-[14px] h-full z-10">
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 rounded-full" style={{ top: "10%" }}></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 rounded-full" style={{ top: "30%" }}></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 rounded-full" style={{ top: "50%" }}></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 rounded-full" style={{ top: "70%" }}></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 rounded-full" style={{ top: "90%" }}></div>
+					<div className="absolute left-1/2 ml-[14px] max-md:ml-[3px] h-full z-10">
+						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[10%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[30%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[50%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[70%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[90%] rounded-full"></div>
 					</div>
 
 					<div className="lg:ml-36 z-20 text-left lg:w-[35%] md:w-full md:mr-0 lg:mr-20 mt-10 max-md:ml-5p max-md:w-full">
