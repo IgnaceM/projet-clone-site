@@ -20,15 +20,15 @@ function App() {
 
 	return (
 		<>
-			<div className="flex justify-between mb-20  fixed w-full top-0 left-0 z-20  bg-white shadow-md p-4 items-center dark:bg-[#000030] max-md:items-center">
-				<img src="./logo.png" alt="" className="w-38 h-10 max-md:w-20 ml-5p" />
+			<div className="flex justify-between mb-20 overflow-hidden w-full top-0 left-0 z-20  bg-white shadow-md p-4 items-center dark:bg-[#000030] max-md:items-center">
+				<img src="./logo.png" alt="" className="w-38 h-10 max-md:w-20 max-md:ml-3" />
 				<div className="flex gap-5 mr-5p">
 					<h3 className="max-md:hidden flex items-center justify-center">
-						contactez-nous{" "}
+						contactez-nous
 						<img src="./link.png" alt="" className="w-5 h-5 ml-5 opacity-20 dark:opacity-100 cursor-pointer" />
 					</h3>
 					<h3 className="max-md:hidden flex items-center justify-center">
-						updev community{" "}
+						updev community
 						<img src="./link.png" alt="" className="w-5 h-5 ml-5 opacity-20 dark:opacity-100 cursor-pointer" />
 					</h3>
 					<div className="visible flex items-center gap-2 ml-5 md:hidden ">
