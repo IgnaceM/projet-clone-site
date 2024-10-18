@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<>
-			<div className="flex justify-between mb-20 overflow-hidden w-full top-0 left-0 z-20  bg-white shadow-md p-4 items-center dark:bg-[#000030] max-md:items-center">
+			<div className="flex justify-between mb-20 px-32 max-md:px-2 absolute overflow-hidden w-full top-0 left-0 z-10  bg-white shadow-md p-4 items-center dark:bg-[#000E1F] max-md:items-center">
 				<img src="./logo.png" alt="" className="w-38 h-10 max-md:w-20 max-md:ml-3" />
 				<div className="flex gap-5 mr-5p">
 					<h3 className="max-md:hidden flex items-center justify-center">
@@ -51,41 +51,44 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="z-10">
+			<div className="z-10 relative flex flex-col justify-center text-center">
 				<img
 					src="https://updev.africa/_next/image?url=%2Flight1.png&w=1080&q=75"
 					alt=""
-					className="absolute -top-[250px] ml-[800px]"
+					className="absolute z-20 -top-[250px] ml-[850px]"
 				/>
-				<h1 className=" text-blue-500 dark:text-orange-500 font-bold text-2xl mb-10 md:text-4xl mt-44 max-md:mt-[200px] z-10">
-					AXÉ SUR LA TECHNOLOGIE
-				</h1>
-				<h1 className="text-5xl mt-0 lg:text-[110px] md:text-[50px] font-bold w-[90%] mx-auto max-md:w-95p max-md:text-5xl z-10">
-					Innover pour une Afrique meilleure
-				</h1>
-				<p className="text-[23px] font-bold -mb-20 md-w-[80%] lg:w-60p z-10 text-gray-500  mt-10  max-md:text-[19px] max-md:mb-[200px] max-md:w-full mx-auto dark:text-gray-200 max-md:font-light">
-					En tirant parti des technologies innoventes et durables,Updev se consacre à promouvoir un changement social et
-					un avenir meilleur pour l'Afrique
-				</p>
+				<img
+					src="https://updev.africa/images/Afrique.svg"
+					alt=""
+					id=""
+					className="z-0 top-36 max-md:top-20 max-sm:top-0 h-[750px] w-[750px] absolute right-20 max-md:right-0 opacity-[5%] dark:opacity-10 "
+				/>
+				<img
+					src="https://updev.africa/_next/image?url=%2Flight2.png&w=1080&q=75"
+					id="scale2"
+					alt=""
+					className="absolute left-0 w-[800px] top-[35rem] max-md:top-[30rem] max-md:mt-[0px] max-md:-ml-[200px]"
+				/>
+				<div className="mb-56">
+					<h1 className=" text-blue-500 dark:text-orange-500 font-bold flex justify-center text-2xl mb-10 md:text-4xl mt-32 z-10">
+						AXÉ SUR LA TECHNOLOGIE
+					</h1>
+					<h1 className="text-5xl mt-0 lg:text-8xl md:text-[50px] flex justify-center font-bold w-[70%] mx-auto max-md:w-95p max-md:text-5xl z-10">
+						Innover pour une Afrique meilleure
+					</h1>
+					<p className="text-[23px] font-sans -mb-20 md-w-[75%] lg:w-60p flex justify-center z-10 text-gray-500  mt-10  max-md:text-[19px] max-md:mb-[10px] max-md:w-full mx-auto dark:text-gray-200 max-md:font-light">
+						En tirant parti des technologies innoventes et durables,Updev se consacre à promouvoir un changement social
+						et un avenir meilleur pour l'Afrique
+					</p>
+				</div>
 			</div>
-			<img
-				src="https://updev.africa/images/Afrique.svg"
-				alt=""
-				id=""
-				className="z-0 flex justify-center sm:-mt-[500px] lg:-mt-[500px] h-[800px] lg:ml-[500px] md:-mt-[500px]  md:ml-[0px]   w-[850px] opacity-[5%] dark:opacity-10  mx-auto max-md:-[800px] max-sm:-mt-[600px] max-md:w-[100%] max-md:h-[380px]"
-			/>
-			<img
-				src="https://updev.africa/_next/image?url=%2Flight4.png&w=1200&q=75"
-				alt=""
-				className="opacity-0 dark:opacity-[100%] animate-spin -ml-[350px] hidden -mb-[350px] absolute  h-[900px] w-[1200px]  z-0 md:block md:-mt-[400px]"
-			></img>
-			<img
-				src="https://updev.africa/_next/image?url=%2Flight2.png&w=1080&q=75"
-				id="scale2"
-				alt=""
-				className="absolute left-0 w-[800px] -mt-[330px] max-md:mt-[0px] max-md:-ml-[200px]"
-			/>
-			<div className=" grid  text-black relative lg:flex justify-between mt-[50px] md:-mt-[120px] dark:text-white">
+
+			<div className=" grid text-black px-36 max-md:px-2 relative lg:flex justify-between mt-[70px] max-md:-mt-[200px] dark:text-white">
+				<img
+					src="https://updev.africa/_next/image?url=%2Flight4.png&w=1200&q=75"
+					alt=""
+					className="opacity-0 dark:opacity-[100%] -top-[19rem] animate-spin -ml-[350px] hidden -mb-[350px] absolute  h-[900px] w-[1200px]  z-0 md:block"
+				></img>
 				<div className="z-10">
 					<h3 className="text-5xl -mt-0 font-bold lg:text-6xl  w-60p mx-auto flex text-left ml-0 max-md:mt-20 max-md:w-full ">
 						Resolution Des Problèmes Sociaux Avec Des Solutions Durables
@@ -95,12 +98,12 @@ function App() {
 					<h1 className="text-9xl lg:text-12xl mt-10 font-bold flex justify-left float-start ">8+</h1>
 				</div>
 			</div>
-			<div>
-				<p className="text-2xl font-bold z-10  text-gray-500 mt-10 lg:text-2xl w-50p text-left  max-md:text-[19px] max-md:w-full dark:text-white">
+			<div className="px-36 max-md:px-2">
+				<p className="text-2xl font-bold max-md:font-light z-10  text-gray-500 mt-10 lg:text-2xl w-50p text-left  max-md:text-[19px] max-md:w-full dark:text-white">
 					Updev a créé desolutions novatrices pour les défis sociaux en Afrique comme :
 				</p>
 			</div>
-			<div className="flex flex-wrap gap-8 justify-center mt-20">
+			<div className="flex flex-wrap gap-8 justify-center mt-20 max-md:px-2">
 				<div className="p-5  bg-blue-100 shadow-lg  lg:p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
 					<div className="flex justify-between mb-5">
 						<img src="./original.png" alt="" className="w-24 h-10" />
@@ -254,7 +257,7 @@ function App() {
 					/>
 				</div>
 			</div>
-			<div className="mt-[300px] max-md:mt-56 w-full z-[-1] ">
+			<div className="mt-[300px] max-md:px-2 px-36 max-md:mt-56 w-full z-[-1] ">
 				<img
 					src="image(1).jpg"
 					alt=""
@@ -293,7 +296,7 @@ function App() {
 						<h3 className="text-2xl text-blue-500 dark:text-[#fca758] font-bold mb-5">
 							Création de l'Entreprise UPDEV
 						</h3>
-						<h6 className="text-[16px] font-bold">
+						<h6 className="text-[16px] max-md:text-[13px] font-bold">
 							Uptodate Developers (UPDEV) a été fondée en tant qu'entreprise technologique de services. Depuis sa
 							création, UPDEV s'est engagée à fournir des solutions innovantes pour résoudre les problèmes
 							technologiques et sociaux auxquels sont confrontés ses clients.
@@ -305,7 +308,7 @@ function App() {
 						<h3 className="text-2xl text-blue-500 dark:text-[#fca758] font-bold mb-5">
 							Développement intensif des App mobiles ios/android et contribution à la réponse à la COVID-19
 						</h3>
-						<h6 className="text-[16px] font-bold">
+						<h6 className="text-[16px] max-md:text-[13px] font-bold">
 							L'entreprise UPDEV a intensifié ses activités en se concentrant sur le développement d'applications
 							mobiles pour les plateformes iOS et Android. Au cours de cette même année, UPDEV organisé un concours de
 							projets technologiques, Updev Challenge, dans la ville de Goma. Nous avons également contribué à la lutte
@@ -319,7 +322,7 @@ function App() {
 						<h3 className="text-2xl text-blue-500 dark:text-[#fca758] font-bold mb-5">
 							UPDEV lance des produits : AgroApp et UPDEV community...
 						</h3>
-						<h6 className="text-[16px] font-bold">
+						<h6 className="text-[16px] max-md:text-[13px] font-bold">
 							UPDEV a élargi sa gamme de services en ajoutant le développement d'applications web à ses compétences. Au
 							cours de la même année, nous avons lancé AgroApp en partenariat avec ISDR/GL et organisé la deuxième
 							édition du concours Updev Challenge. Nous avons également lancé Updev Community, un forum d'échange pour
@@ -332,7 +335,7 @@ function App() {
 						<h3 className="text-2xl text-blue-500 dark:text-[#fca758] font-bold mb-5">
 							Développement de plugins et organisation du concours UPDEV challenge troisième édition
 						</h3>
-						<h6 className="text-[16px] font-bold">
+						<h6 className="text-[16px] max-md:text-[13px] font-bold">
 							UPDEV a élargi son offre de services en ajoutant le développement de plugins à son portefeuille. Cette
 							même année, nous avons organisé la troisième édition de Updev Challenge en partenariat avec Ingenious City
 							et parrainé par le ministère du numérique.
@@ -354,8 +357,8 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="z-10 mt-56 md:mt-[600px] w-full">
-				<h1 className="center text-5xl">Ils nous font confiance</h1>
+			<div className="z-10 mt-56 md:mt-[600px] flex flex-col text-center w-full">
+				<h1 className="center flex justify-center text-5xl">Ils nous font confiance</h1>
 				<div className="w-70p mx-auto flex flex-wrap  gap-8 justify-center  mt-20 max-md:grid-cols-2 max-md:flex max-md:flex-col max-md:w- max-md:justify-center">
 					<img src="./edu.png" alt="" className="w-56 h-25 max-md:w-280px" />
 					<img src="./ukwaji.jpg" alt="" className="w-56 h-25 max-md:w-280px" />
@@ -393,7 +396,7 @@ function App() {
 				alt=""
 				className="opacity-0 absolute dark:opacity-100 animate-spin mt-[50px] -mb-[450px] max-md:h-full max-md:dark:opacity-30 h-[550px] w-[700px] -z-10 md:mt-[0px]"
 			></img>
-			<div className="flex justify-between items-center mt-32 max-md:flex-col">
+			<div className="flex justify-between px-32 max-md:px-2 items-center mt-32 max-md:flex-col">
 				<div className="text-left w-60p mx-auto ml-0 max-md:w-full">
 					<h1 className="text-5xl mb-5 z-20">Notre communauté</h1>
 					<p className="text-2xl z-20 text-gray-500 mt-10  text-left max-md:text-[19px] max-md:w-full dark:text-gray-300">
@@ -404,7 +407,7 @@ function App() {
 					<h1 className="text-8xl">12+</h1>
 				</div>
 			</div>
-			<div className="flex justify-between max-md:flex-col">
+			<div className="flex justify-between px-32 max-md:px-2 max-md:flex-col">
 				<div className="mt-28 w-50p bg-blue-100 h-48 shadow-lg p-10 max-md:w-full max-md:p-7 max-md:h-fit dark:bg-gray-700 dark:bg-opacity-70 ">
 					<div className="flex justify-between items-center">
 						<img src="./original.png" alt="" className="w-24" />
@@ -478,7 +481,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<footer className="max-md:text-[12px]">
+			<footer className="max-md:text-[12px] px-32 max-md:px-2">
 				<div className="flex justify-between w-full mt-20 mb-5 max-md:flex ">
 					<h3>clone Updev Africa</h3>
 					<h3 className="text-blue-500 dark:text-orange-500 font-bold italic">Ignace production</h3>
@@ -493,4 +496,3 @@ function App() {
 }
 
 export default App;
-
