@@ -20,7 +20,7 @@ function App() {
 
 	return (
 		<>
-			<div className="flex justify-between mb-20 px-32 max-md:px-2 absolute overflow-hidden w-full top-0 left-0 z-10  bg-white shadow-md p-4 items-center dark:bg-[#000E1F] max-md:items-center">
+			<div className="flex justify-between mb-20 px-32 max-md:px-2 absolute w-full  left-0 z-20  bg-gray-50 shadow-md p-4 items-center dark:bg-[#000E1F]">
 				<img src="./logo.png" alt="" className="w-38 h-10 max-md:w-20 max-md:ml-3" />
 				<div className="flex gap-5 mr-5p">
 					<h3 className="max-md:hidden flex items-center justify-center">
@@ -39,13 +39,16 @@ function App() {
 					<select
 						name=""
 						id=""
-						className="outline-none bg-white text-black dark:bg-[#000030] dark:text-white border-none"
+						className="outline-none bg-white max-md:ml-5 text-black dark:bg-[#000E1F] dark:text-white border-none"
 					>
-						<option value="">Fr</option>
-						<option value="">En</option>
+						<option value="fr">Fr</option>
+						<option value="en">En</option>
 					</select>
 					<div>
-						<button onClick={toggleTheme} className="bg-blue-300 text-black ml-5 max-md:ml-1 p-2 rounded-md">
+						<button
+							onClick={toggleTheme}
+							className="bg-blue-300 z-20 cursor-pointer text-black ml-5 max-md:ml-1 p-2 rounded-md"
+						>
 							Thèmes
 						</button>
 					</div>
@@ -55,7 +58,7 @@ function App() {
 				<img
 					src="https://updev.africa/_next/image?url=%2Flight1.png&w=1080&q=75"
 					alt=""
-					className="absolute z-20 -top-[250px] ml-[850px]"
+					className="absolute z-20 opacity-40 -top-[250px] ml-[850px]"
 				/>
 				<img
 					src="https://updev.africa/images/Afrique.svg"
@@ -69,11 +72,11 @@ function App() {
 					alt=""
 					className="absolute left-0 w-[800px] top-[35rem] max-md:top-[30rem] max-md:mt-[0px] max-md:-ml-[200px]"
 				/>
-				<div className="mb-56">
+				<div className="mb-56 max-md:px-4">
 					<h1 className=" text-blue-500 dark:text-orange-500 font-bold flex justify-center text-2xl mb-10 md:text-4xl mt-32 z-10">
 						AXÉ SUR LA TECHNOLOGIE
 					</h1>
-					<h1 className="text-5xl mt-0 lg:text-8xl md:text-[50px] flex justify-center font-bold w-[70%] mx-auto max-md:w-95p max-md:text-5xl z-10">
+					<h1 className="text-5xl mt-0 lg:text-8xl md:text-[50px] flex justify-center font-bold w-[70%] mx-auto max-md:w-full max-md:text-5xl z-10">
 						Innover pour une Afrique meilleure
 					</h1>
 					<p className="text-[23px] font-sans -mb-20 md-w-[75%] lg:w-60p flex justify-center z-10 text-gray-500  mt-10  max-md:text-[19px] max-md:mb-[10px] max-md:w-full mx-auto dark:text-gray-200 max-md:font-light">
@@ -83,7 +86,7 @@ function App() {
 				</div>
 			</div>
 
-			<div className=" grid text-black px-36 max-md:px-2 relative lg:flex justify-between mt-[70px] max-md:-mt-[200px] dark:text-white">
+			<div className=" grid text-black px-36 max-md:px-4 relative lg:flex justify-between mt-[70px] max-md:-mt-[200px] dark:text-white">
 				<img
 					src="https://updev.africa/_next/image?url=%2Flight4.png&w=1200&q=75"
 					alt=""
@@ -98,12 +101,12 @@ function App() {
 					<h1 className="text-9xl lg:text-12xl mt-10 font-bold flex justify-left float-start ">8+</h1>
 				</div>
 			</div>
-			<div className="px-36 max-md:px-2">
+			<div className="px-36 max-md:px-4">
 				<p className="text-2xl font-bold max-md:font-light z-10  text-gray-500 mt-10 lg:text-2xl w-50p text-left  max-md:text-[19px] max-md:w-full dark:text-white">
 					Updev a créé desolutions novatrices pour les défis sociaux en Afrique comme :
 				</p>
 			</div>
-			<div className="flex flex-wrap gap-8 justify-center mt-20 max-md:px-2">
+			<div className="flex flex-wrap gap-8 justify-center mt-20 max-md:px-4">
 				<div className="p-5  bg-blue-100 shadow-lg  lg:p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
 					<div className="flex justify-between mb-5">
 						<img src="./original.png" alt="" className="w-24 h-10" />
@@ -119,7 +122,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -137,7 +153,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -155,7 +184,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">Lancé</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -173,7 +215,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -191,12 +246,29 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
 					<div className="flex justify-between mb-5">
-						<img src="./ex.png" alt="" className="w-12 h-10" />
+						<img
+							src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2FUpdev_Work_Suit_50228561c7.png&w=128&q=75g"
+							alt=""
+							className="w-20 h-10"
+						/>
 						<p className="bg-blue-200 p-1 rounded-md dark:bg-gray-400">PROWORKSPACE</p>
 					</div>
 					<div className="text-left mb-5">
@@ -209,7 +281,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -227,7 +312,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="bg-blue-100 shadow-lg p-4 w-280px max-md:w-full dark:bg-gray-700 dark:bg-opacity-70">
@@ -245,7 +343,20 @@ function App() {
 					<div className=" flex justify-between">
 						<h3>co-propriétaire</h3>
 						<h3 className="text-orange-400 font-bold">beta</h3>
-						<img src="./link.png" alt="" className="w-5 h-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 				</div>
 				<div className="-mt-[600px] max-md:-mt-[1500px] z-0">
@@ -257,7 +368,7 @@ function App() {
 					/>
 				</div>
 			</div>
-			<div className="mt-[300px] max-md:px-2 px-36 max-md:mt-56 w-full z-[-1] ">
+			<div className="mt-[300px] max-md:px-4 px-36 max-md:mt-56 w-full z-[-1] ">
 				<img
 					src="image(1).jpg"
 					alt=""
@@ -283,12 +394,13 @@ function App() {
 
 					<div className="absolute left-1/2 h-full w-1 ml-5 max-md:ml-2  bg-[#ff772e] opacity-40 z-10"></div>
 
-					<div className="absolute left-1/2 ml-[14px] max-md:ml-[3px] h-full z-10">
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[10%] rounded-full"></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[30%] rounded-full"></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[50%] rounded-full"></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[70%] rounded-full"></div>
-						<div className="absolute bg-orange-400 opacity-30 w-4 h-4 top-[90%] rounded-full"></div>
+					<div className="absolute left-1/2 ml-[14px] max-md:ml-[1.5px] h-full z-10">
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[0%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[20%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[40%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[60%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[80%] rounded-full"></div>
+						<div className="absolute bg-orange-400 opacity-50 w-4 h-4 top-[100%] rounded-full"></div>
 					</div>
 
 					<div className="lg:ml-36 z-20 text-left lg:w-[35%] md:w-full md:mr-0 lg:mr-20 mt-10 max-md:ml-5p max-md:w-full">
@@ -357,35 +469,97 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<div className="z-10 mt-56 md:mt-[600px] flex flex-col text-center w-full">
-				<h1 className="center flex justify-center text-5xl">Ils nous font confiance</h1>
-				<div className="w-70p mx-auto flex flex-wrap  gap-8 justify-center  mt-20 max-md:grid-cols-2 max-md:flex max-md:flex-col max-md:w- max-md:justify-center">
-					<img src="./edu.png" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./ukwaji.jpg" alt="" className="w-56 h-25 max-md:w-280px" />
+			<div className="z-10 mt-56  flex flex-col text-center justify-center w-full">
+				<h1 className="center flex justify-center text-6xl max-md:text-4xl font-bold max-md:px-2">
+					Ils nous font confiance
+				</h1>
+				<p className="text-2xl font-sans z-10 mt-10 mb-10">
+					Ils ont confiance en nous et se fient à nos capacités et à notre fiabilité.
+				</p>
+				<div className="w-full px-32 mx-auto flex flex-wrap grid-cols-7 gap-8 justify-center  mt-20 max-md:grid-cols-2 max-md:flex max-md:flex-col max-md:w-full  max-md:justify-center max-md:items-center">
 					<img
-						src="./cardano.png"
+						src="https://updev.africa/_next/image?url=%2Flight4.png&w=1200&q=75"
 						alt=""
-						className="w-56 h-25 bg-blue-300 p-5 rounded-lg dark:bg-transparent max-md:w-280px"
+						className="opacity-0 dark:opacity-[100%] - animate-spin  hidden -mt-[350px] absolute  h-[800px] w-[1000px]  z-0 md:block"
+					></img>
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Fp2_d6403d825c.png&w=256&q=75"
+						className="grayscale hover:grayscale-0 bg-blue-300 rounded-lg w-44 h-20"
+						alt=""
 					/>
-					<img src="./ministere.jpg" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./pelek.jpg" alt="" className="w-56 h-25 max-md:w-280px" />
+					<img src="./edu.png" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
+					<img src="./ukwaji.jpg" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2FCardano_RGB_Logo_Full_White_6bc18bb598.png&w=1920&q=75"
+						alt=""
+						className="w-44 h-20 max-md:w-250px bg-blue-300 grayscale hover:grayscale-0 p-5 rounded-lg"
+					/>
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2FMin_Num_45da2234eb.png&w=256&q=75"
+						alt=""
+						className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0"
+					/>
+					<img src="./pelek.jpg" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
 					<img
 						src="./wingo.png"
 						alt=""
-						className="w-56 h-25 bg-blue-300 p-5 rounded-lg dark:bg-transparent max-md:w-280px"
+						className="w-44 h-20 max-md:w-250px bg-blue-300 p-5 rounded-lg grayscale hover:grayscale-0 dark:bg-transparent"
 					/>
 					<img
-						src="./safrochain.png"
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2FLogo_4384c2fe09.png&w=3840&q=75"
 						alt=""
-						className="w-56 h-25 bg-blue-300 p-5 rounded-lg dark:bg-transparent max-md:w-280px"
+						className="w-44 h-20 max-md:w-250px  grayscale hover:grayscale-0 p-5 rounded-lg dark:bg-transparent"
 					/>
-					<img src="./ikn.png" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./Ekival-768x288-1.png" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./agro.jpg" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./Updev_Comunity_Logo_e07b90d064.png" alt="" className="w-56 h-25 max-md:w-280px" />
-					<img src="./Updev_Challenge_Logo_White_Sans_70b30f974d.avif" alt="" className="w-56 h-25 max-md:w-280px" />
+					<img src="./ikn.png" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
+					<img src="./Ekival-768x288-1.png" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
+					<img src="./agro.jpg" alt="" className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0" />
+					<img
+						src="./Updev_Comunity_Logo_e07b90d064.png"
+						alt=""
+						className="w-44 h-20 max-md:w-250px grayscale hover:grayscale-0"
+					/>
+					<img
+						src="./Updev_Challenge_Logo_White_Sans_70b30f974d.avif"
+						alt=""
+						className="w-44 h-20 max-md:w-250px  grayscale hover:grayscale-0"
+					/>
 					<img
 						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Fpartenairesb_AKARI_59909fd735.png&w=256&q=75"
+						alt=""
+						className="grayscale hover:grayscale-0 h-20"
+					/>
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2FPeleka_App_food_white_orange_2b27282d34.png&w=3840&q=75"
+						className="grayscale hover:grayscale-0 w-44 h-20"
+						alt=""
+					/>
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Fcardanocommunity_FR_cb62f14a6e.png&w=1920&q=75"
+						className="grayscale hover:grayscale-0 w-44 h-20"
+						alt=""
+					/>
+
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Flogo_Covid_Teamfull_Stand_ceb2d24ef1.png&w=640&q=75"
+						className="grayscale hover:grayscale-0 w-44 h-20"
+						alt=""
+					/>
+
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Fpartenaires_ISDRGL_new_d7fbfe902d.png&w=256&q=75"
+						className="grayscale hover:grayscale-0 w-44 h-20"
+						alt=""
+					/>
+
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Flogo_858e659aa7_bc8c013374.png&w=256&q=75"
+						className="grayscale hover:grayscale-0 w-44 h-30"
+						alt=""
+					/>
+
+					<img
+						src="https://updev.africa/_next/image?url=https%3A%2F%2Fadmin.updev.africa%2Fuploads%2Fp4_3ef8666370.png&w=256&q=75"
+						className="grayscale hover:grayscale-0 bg-blue-300 rounded-lg w-44 h-20"
 						alt=""
 					/>
 				</div>
@@ -394,12 +568,12 @@ function App() {
 				src="https://updev.africa/_next/image?url=%2Flight4.png&w=1200&q=75"
 				id=""
 				alt=""
-				className="opacity-0 absolute dark:opacity-100 animate-spin mt-[50px] -mb-[450px] max-md:h-full max-md:dark:opacity-30 h-[550px] w-[700px] -z-10 md:mt-[0px]"
+				className="opacity-0 absolute dark:opacity-100 animate-spin mt-[50px] max-md:h-[300px] max-md:-ml-[100px] max-md:dark:opacity-70 h-[550px] w-[750px] -z-10 md:mt-[0px]"
 			></img>
-			<div className="flex justify-between px-32 max-md:px-2 items-center mt-32 max-md:flex-col">
-				<div className="text-left w-60p mx-auto ml-0 max-md:w-full">
-					<h1 className="text-5xl mb-5 z-20">Notre communauté</h1>
-					<p className="text-2xl z-20 text-gray-500 mt-10  text-left max-md:text-[19px] max-md:w-full dark:text-gray-300">
+			<div className="flex justify-between px-32 max-md:px-4 items-center mt-32 max-md:flex-col">
+				<div className="text-left w-[40%] mx-auto ml-0 max-md:w-full">
+					<h1 className="text-6xl mb-5 z-20 font-bold">Notre communauté</h1>
+					<p className="text-2xl z-20 text-gray-500 mt-10 font-bold text-left max-md:text-[19px] max-md:w-full dark:text-gray-300">
 						Favoriser l'innovation technologique en permettant aux développeurs et aux technologues d'apprendre.
 					</p>
 				</div>
@@ -407,12 +581,25 @@ function App() {
 					<h1 className="text-8xl">12+</h1>
 				</div>
 			</div>
-			<div className="flex justify-between px-32 max-md:px-2 max-md:flex-col">
+			<div className="flex justify-between px-32 max-md:px-4 max-md:flex-col">
 				<div className="mt-28 w-50p bg-blue-100 h-48 shadow-lg p-10 max-md:w-full max-md:p-7 max-md:h-fit dark:bg-gray-700 dark:bg-opacity-70 ">
 					<div className="flex justify-between items-center">
 						<img src="./original.png" alt="" className="w-24" />
 						<p className="max-md:hidden">Updev community</p>
-						<img src="link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</div>
 					<div>
 						<p className="flex text-left mt-5">
@@ -428,7 +615,20 @@ function App() {
 							<p className="ml-2 font-bold">Twitter</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div className="flex justify-between">
@@ -437,7 +637,20 @@ function App() {
 							<p className="ml-2 font-bold">Telegram</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer " />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div className="flex justify-between">
@@ -446,7 +659,20 @@ function App() {
 							<p className="ml-2 font-bold">LinkedIn</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div className="flex justify-between">
@@ -455,7 +681,20 @@ function App() {
 							<p className="ml-2 font-bold">Facebook</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div className="flex justify-between">
@@ -464,7 +703,20 @@ function App() {
 							<p className="ml-2 font-bold">Instagram</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div className="flex justify-between">
@@ -473,7 +725,20 @@ function App() {
 							<p className="ml-2 font-bold">Discord</p>
 						</div>
 						<div>
-							<img src="./link.png" alt="" className="w-6 h-6 opacity-20 dark:opacity-100 cursor-pointer" />
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="2.5"
+								stroke="currentColor"
+								class="w-6 h-6 cursor-pointer "
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+								></path>
+							</svg>
 						</div>
 					</div>
 					<div>
@@ -481,7 +746,7 @@ function App() {
 					</div>
 				</div>
 			</div>
-			<footer className="max-md:text-[12px] px-32 max-md:px-2">
+			<footer className="max-md:text-[12px] px-32 max-md:px-4">
 				<div className="flex justify-between w-full mt-20 mb-5 max-md:flex ">
 					<h3>clone Updev Africa</h3>
 					<h3 className="text-blue-500 dark:text-orange-500 font-bold italic">Ignace production</h3>

@@ -2,23 +2,25 @@ body {
 	overflow-x: hidden;
 }
 
-#root {
-	position: fixed;
+ #root {
+	position: relative; 
 	top: 0; 
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: fit-content;
 	overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden; 
+  
 
-}
+ }  
 
-@media (max-width: 500px) {
+ @media (max-width: 500px) {
 	#root {
 		overflow-x: hidden;
 		max-width: fit-content;
+    height: fit-content;
 	}
-}
+} 
 .logo {
 	height: 6em;
 	padding: 1.5em;
