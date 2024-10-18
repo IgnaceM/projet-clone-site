@@ -2,6 +2,16 @@
 body {
   overflow-x: hidden;
 }
+
+#root {
+  overflow-x: hidden;
+}
+
+@media (max-width:780px) {
+  #root {
+    overflow-x: hidden;
+  }
+}
 .logo {
   height: 6em;
   padding: 1.5em;
