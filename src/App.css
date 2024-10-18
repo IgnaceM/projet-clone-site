@@ -7,9 +7,10 @@ body {
   overflow-x: hidden;
 }
 
-@media (max-width:780px) {
+@media (max-width:600px) {
   #root {
     overflow-x: hidden;
+    width: fit-content;
   }
 }
 .logo {
