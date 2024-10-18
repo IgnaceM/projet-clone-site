@@ -23,13 +23,39 @@ function App() {
 			<div className="flex justify-between mb-20 px-32 max-md:px-2 absolute w-full  left-0 z-20  bg-gray-50 shadow-md p-4 items-center dark:bg-[#000E1F]">
 				<img src="./logo.png" alt="" className="w-38 h-10 max-md:w-20 max-md:ml-3" />
 				<div className="flex gap-5 mr-5p">
-					<h3 className="max-md:hidden flex items-center justify-center">
+					<h3 className="max-md:hidden flex items-center mr-5 justify-center">
 						contactez-nous
-						<img src="./link.png" alt="" className="w-5 h-5 ml-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 ml-5 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</h3>
-					<h3 className="max-md:hidden flex items-center justify-center">
+					<h3 className="max-md:hidden flex items-center mr-5 justify-center">
 						updev community
-						<img src="./link.png" alt="" className="w-5 h-5 ml-5 opacity-20 dark:opacity-100 cursor-pointer" />
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="2.5"
+							stroke="currentColor"
+							class="w-6 h-6 ml-5 cursor-pointer "
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25 "
+							></path>
+						</svg>
 					</h3>
 					<div className="visible flex items-center gap-2 ml-5 md:hidden ">
 						<img src="./Chat Bubble_50px.png" alt="" className="h-[20px] w-[20px]" />
