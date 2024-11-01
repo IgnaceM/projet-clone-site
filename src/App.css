@@ -12,7 +12,20 @@ body {
   overflow-x: hidden; 
   
 
- }  
+ } 
+ 
+ 
+ #language {
+	display: none;
+ }
+
+ #lcont {
+	position: absolute;
+	display: flex;
+	margin-top: 4px;
+ }
+
+ 
 
  @media (max-width: 500px) {
 	#root {
