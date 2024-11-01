@@ -36,11 +36,11 @@ function AppEn() {
 
 	return (
 		<>
-			<div className="flex justify-between mb-20 px-32 py-10 max-md:px-4 absolute w-full  left-0 z-20  bg-gray-50 p-4 items-center dark:bg-transparent">
-				<img src="./logo.png" alt="" className="w-28 h-8 max-md:w-20 max-md:ml-3" />
-				<div className="flex gap-5 mr-20">
+			<div className="flex justify-between mb-20 px-32 py-10 max-md:px-2 absolute w-full  left-0 z-20  bg-gray-50 p-2 items-center dark:bg-transparent">
+				<img src="./logo.png" alt="" className="w-28 h-8 max-md:w-20 max-md:ml-2 max-md:mr-10" />
+				<div className="flex gap-5 mr-20 max-md:mr-4">
 					<h3 className="max-md:hidden font-bold text-[20px] flex items-center mr-5 justify-center">
-						contactez-nous
+						contact us
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
@@ -73,9 +73,9 @@ function AppEn() {
 							></path>
 						</svg>
 					</h3>
-					<div className="visible flex items-center gap-2 ml-5 md:hidden ">
-						<img src="./Chat Bubble_50px.png" alt="" className="h-[20px] w-[20px]" />
-						<img src="./People_50px.png" alt="" className="h-[20px] w-[20px]" />
+					<div className="visible flex items-center gap-2 ml-5 mr-1 md:hidden ">
+						<img src="./Chat Bubble_50px.png" alt="" className="h-[30px] w-[30px]" />
+						<img src="./People_50px.png" alt="" className="h-[30px] w-[30px]" />
 					</div>
 
 					<div className="-ml-5 max-md:ml-2">
@@ -106,10 +106,10 @@ function AppEn() {
 						</div>
 					</div>
 
-					<div className="ml-10">
+					<div className="">
 						<button
 							onClick={toggleTheme}
-							className="bg-blue-300 z-20 cursor-pointer text-black ml-5 max-md:ml-1 p-2 rounded-md"
+							className="bg-blue-300 z-20 cursor-pointer text-black ml-20 max-md:ml-10 p-2 rounded-md"
 						>
 							Thèmes
 						</button>
