@@ -45,7 +45,7 @@ function AppFr() {
 				<img src="./logo.png" alt="" className="w-28 h-8 max-md:w-20 max-md:ml-2 max-md:mr-10" />
 				<div className="flex gap-5 mr-20 max-md:mr-4">
 					<h3 className="max-md:hidden font-bold text-[20px] flex items-center mr-5 justify-center">
-						contact us
+						contactez-nous
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
